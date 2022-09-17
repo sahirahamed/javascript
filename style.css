@@ -22,3 +22,84 @@
   margin: 10px;
   box-shadow: 2px 2px 2px 2px grey;
 }
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+}
+.columns {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+}
+.india-btn {
+  color: rgb(250, 241, 237);
+  height: 50px;
+  width: 150px;
+  font-weight: 500;
+  background-color: orangered;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 2px 2px grey;
+  font-size: 15px;
+  font-weight: bolder;
+}
+#flag {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 25px;
+}
+#national {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 25px;
+}
+#nation {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 25px;
+}
+#nations {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 25px;
+}
+.australia-btn {
+  color: rgb(250, 241, 237);
+  height: 50px;
+  width: 150px;
+  font-weight: 500;
+  background-color: rgb(130, 11, 181);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 2px 2px grey;
+  font-size: 15px;
+  font-weight: bolder;
+}
+.canada-btn {
+  color: rgb(250, 241, 237);
+  height: 50px;
+  width: 150px;
+  font-weight: 500;
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 2px 2px grey;
+  font-size: 15px;
+  font-weight: bolder;
+}
