@@ -40,3 +40,40 @@ function generateImage(){
 
         }
 
+        const plus = document.querySelector('.plus'),
+        number = document.querySelector('.number'),
+        minus = document.querySelector('.minus');
+        let a = 1;
+
+        plus.addEventListener('click',()=>
+{
+a++;
+console.log("a");
+number.innerText = (a);
+
+        });
+
+        minus.addEventListener('click',()=>
+        {
+if(a>1){
+a--
+number.innerText = (a);
+}
+else{
+    a--;
+    number.innerText = (a);
+}
+
+
+
+                });
+                const reset = document.querySelector('.reset');
+                reset.addEventListener('click',clearAll);
+
+function clearAll(){
+
+number.innerHTML = ('0');
+
+
+}
+
