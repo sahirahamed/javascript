@@ -166,3 +166,83 @@
   margin-top: 50px;
   margin-left: 250px;
 }
+.increments {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+.decrements {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+.parent {
+  display: flex;
+  flex-direction: row;
+}
+
+.square {
+  height: 50px;
+  width: 50px;
+  background-color: blueviolet;
+  display: none;
+}
+.circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 20px;
+  background-color: blueviolet;
+  display: none;
+}
+#red-div {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+}
+#yellow-div {
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+}
+#green-div {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+}
+.flex {
+  display: flex;
+}
+.container {
+  height: 600px;
+  width: 100%;
+  background-image: url(./images/cricket.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+.container h1 {
+  margin-left: 100px;
+  margin-top: 150px;
+  color: rgb(3, 3, 93);
+  font-size: 40px;
+}
+.container #clock {
+  height: 120px;
+  width: 240px;
+  background-color: rgb(243, 6, 6);
+  color: black;
+  display: flex;
+  flex-direction: row;
+  margin-left: 100px;
+  align-items: center;
+  border-radius: 50px;
+  margin-top: 50px;
+}
+
+.container #clock span {
+  padding: 15px;
+  font-size: 25px;
+  font-weight: bolder;
+}

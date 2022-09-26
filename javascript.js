@@ -77,3 +77,115 @@ number.innerHTML = ('0');
 
 }
 
+
+
+
+function age(){
+
+if(document.getElementById('numb').value>=18){
+
+window.alert('ELIGIBLE FOR VOTE');
+
+}
+else{
+
+window.alert('U ARE NOT ELIGIBLE');
+}
+}
+
+
+function favourite(){
+    let text;
+if(document.getElementById('lucky').value>=10){
+
+text = 'Yeah ! its Greater than 10';
+}
+else{
+
+text = 'Enter a Valid Number';
+}
+
+document.getElementById('demo').innerHTML = text
+;}
+
+
+function rainbow(){
+let crayons;
+
+if(document.getElementById('color').value=='red'){
+
+crayons = "you clicked RED";
+}
+else if(document.getElementById('color').value=='green'){
+
+    crayons = "you clicked GREEN";
+}
+else if(document.getElementById('color').value=='blue'){
+
+    crayons = "you clicked BLUE";
+}
+else if(document.getElementById('color').value=='black'){
+
+    crayons = "you clicked BLACK";
+}
+else if(document.getElementById('color').value=='blue'){
+
+    crayons = "you clicked ROSE";
+}
+else if(document.getElementById('color').value=='orange'){
+
+    crayons = "you clicked ORANGE";
+}
+else if(document.getElementById('color').value=='pink'){
+
+    crayons = "you clicked PINK";
+}
+
+else{
+    crayons = "Enter a Valid Color";
+
+}
+document.getElementById('star').innerHTML = crayons ;
+
+}
+
+function identity(){
+
+
+    let x = document.getElementById('aadhar').value;
+    window.alert(x);
+
+}
+
+const hourSpan = document.getElementById('hour');
+const minutesSpan = document.getElementById('minutes');
+const secondsSpan = document.getElementById('seconds');
+const amorpmSpan = document.getElementById('amorpm');
+
+function changeTime(){
+
+const date = new Date();
+let hours = date.getHours();
+let minutes =date.getMinutes();
+let seconds =date.getSeconds();
+
+let amorpm;
+console.log(hours,minutes,seconds,amorpm);
+hourSpan.innerText = hours;
+minutesSpan.innerText = minutes;
+secondsSpan.innerText = seconds;
+
+if (hours <= 0 || hours <= 12)
+{
+amorpm ="AM"
+
+
+}
+else{
+amorpm = "PM"
+
+}
+amorpmSpan.textContent = amorpm;
+
+}
+setInterval(changeTime,1000)
