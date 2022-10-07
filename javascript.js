@@ -189,3 +189,35 @@ amorpmSpan.textContent = amorpm;
 
 }
 setInterval(changeTime,1000)
+
+
+
+// to-do-list
+
+const addNewButton = document.getElementById('addNew');
+ const inputField =document.getElementById('inputField')
+ const addResults = document.getElementById('addResults')
+
+ addNewButton.addEventListener('click',function(){
+
+const createNew = document.createElement('createNew');
+createNew.innerText = inputField.value;
+createNew.classList.add('creator');
+
+addResults.appendChild(createNew);
+inputField.value = "";
+const mySpan = document.createElement('spans');
+mySpan.innerText = "x";
+mySpan.classList.add("spaner");
+createNew.appendChild(mySpan);
+
+mySpan.addEventListener('click',function(){
+
+    addResults.removeChild(createNew);
+
+
+})
+
+
+
+ })
