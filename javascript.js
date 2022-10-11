@@ -198,7 +198,12 @@ const addNewButton = document.getElementById('addNew');
  const inputField =document.getElementById('inputField')
  const addResults = document.getElementById('addResults')
 
- addNewButton.addEventListener('click',function(){
+
+ addNewButton.addEventListener('click',function(e){
+    if(inputField.value===''){
+e.preventDefault();
+}else{
+
 
 const createNew = document.createElement('createNew');
 createNew.innerText = inputField.value;
@@ -220,9 +225,9 @@ mySpan.addEventListener('click',function(){
 
 })
 
+}
+})
 
-
- })
 
 
 
