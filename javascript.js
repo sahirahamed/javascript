@@ -206,18 +206,38 @@ createNew.classList.add('creator');
 
 addResults.appendChild(createNew);
 inputField.value = "";
-const mySpan = document.createElement('spans');
-mySpan.innerText = "x";
-mySpan.classList.add("spaner");
-createNew.appendChild(mySpan);
 
+
+
+const mySpan = document.createElement('spans');
+
+mySpan.innerText = "x";
+mySpan.classList.add('spaner');
+createNew.appendChild(mySpan);
 mySpan.addEventListener('click',function(){
 
     addResults.removeChild(createNew);
-
 
 })
 
 
 
  })
+
+
+
+ const changeCode = document.getElementById('hex');
+ const changeCard = document.getElementById('colorCard');
+ function generateNewColor(){
+
+
+var symbols = "0123456789ABCDEF"//16
+var color = "#";
+for(var i=0; i<6; i++){
+color = color + symbols[Math.floor(Math.random() * 16)];
+
+
+}
+changeCode.innerHTML = color;
+changeCard.style.background = color;
+ }
